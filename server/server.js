@@ -463,7 +463,7 @@ app.post('/api/stats1', (req, res) => {
 
 
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || $PORT;
 console.log(port);
 app.listen(port, () => {
     console.log(`running on port ${port}`);

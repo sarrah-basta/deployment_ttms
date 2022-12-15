@@ -5,7 +5,7 @@
 ### Group 8
 
 - 201081057 - Sarrah Bastawala
-- 201080048 - Himanshu Chougule]
+- 201080048 - Himanshu Chougule
 
 ---
 
@@ -179,7 +179,7 @@
 
 1. Go to the server directory
 2. Run node server.js
-3. LOCALHOST server will be running on port 8080
+3. LOCALHOST server will be running on port $PORT
 
 ---
 
