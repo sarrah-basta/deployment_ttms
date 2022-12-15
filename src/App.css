@@ -1,0 +1,11 @@
+.main {
+    text-align:center;
+    background-color: #40a8c4;
+    font-family: 'Playfair Display', serif;
+    font-size:20px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}

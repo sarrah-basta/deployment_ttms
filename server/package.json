@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "querystring": "^0.2.0",
+    "genetic-js-no-ww": "^0.2.1"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "standard": "^14.3.1",
+    "tape": "^4.11.0"
+  }
+}
