@@ -40,12 +40,12 @@ export default function Demo () {
         if (role === 'Faculty') {
             name = localStorage.getItem('userName');
             axios
-            .post(`http://0.0.0.0:port/api/query/time2`,name)
+            .post(`http://127.0.0.0:port/api/query/time2`,name)
             .then((res) => {
               console.log('gotta 1st response',res);
             if (res.data.code === 200){
                 axios
-                .post(`http://0.0.0.0:port/api/query/time4`,(res.data.data[0]))
+                .post(`http://127.0.0.0:port/api/query/time4`,(res.data.data[0]))
                 .then((result) => {
                   console.log('sexond resoone', result)
                 if (res.data.code === 200){
@@ -81,12 +81,12 @@ export default function Demo () {
         } else if (role === 'Student') {
             name = localStorage.getItem('userName');
             axios
-            .post(`http://0.0.0.0:port/api/query/time1`,name)
+            .post(`http://127.0.0.0:port/api/query/time1`,name)
             .then((res) => {
             if (res.data.code === 200){
                 console.log("1st reapsone",res.data.data);
                 axios
-                .post(`http://0.0.0.0:port/api/query/time3`,(res.data.data[0]))
+                .post(`http://127.0.0.0:port/api/query/time3`,(res.data.data[0]))
                 .then((result) => {
                 if (res.data.code === 200){
                     let student = result.data.data;

@@ -72,7 +72,7 @@ export default function MaterialTableDemo(props) {
       const getData = async () => {
         setTableKey(0);
         await axios
-        .post(`http://0.0.0.0:port/api/getdata/${active}`)
+        .post(`http://127.0.0.0:port/api/getdata/${active}`)
         .then((res) => {
           if (res.data.code === 200){
             temp.data = res.data.content
@@ -99,7 +99,7 @@ export default function MaterialTableDemo(props) {
 
   const insert = (props) => {
     axios
-      .post(`http://0.0.0.0:port/api/insert/${active}`,props)
+      .post(`http://127.0.0.0:port/api/insert/${active}`,props)
       .then((res) => {
         if (res.data.code === 200){
           console.log(res.data.message);
@@ -118,7 +118,7 @@ export default function MaterialTableDemo(props) {
     data.push(props);
     data.push(Object.keys(props));
     axios
-      .post(`http://0.0.0.0:port/api/delete/${active}`,data)
+      .post(`http://127.0.0.0:port/api/delete/${active}`,data)
       .then((res) => {
         if (res.data.code === 200){
           console.log(res.data.message);
@@ -139,7 +139,7 @@ export default function MaterialTableDemo(props) {
     data.push(Object.keys(props));
     console.log('props', props,data);
     axios
-      .post(`http://0.0.0.0:port/api/update/${active}`,data)
+      .post(`http://127.0.0.0:port/api/update/${active}`,data)
       .then((res) => {
         if (res.data.code === 200){
           console.log(res.data.message);
