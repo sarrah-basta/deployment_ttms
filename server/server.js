@@ -13,22 +13,22 @@ app.use(function (req, res, next) {
     next();
 });
 
-var connection = mySql.createConnection({
-    host: "localhost",
-    user: 'root',
-    password: "85218521",
-    database: "ttms",
-    port: "3306",
-    multipleStatements: true
-})
+// var connection = mySql.createConnection({
+//     host: "localhost",
+//     user: 'root',
+//     password: "85218521",
+//     database: "ttms",
+//     port: "3306",
+//     multipleStatements: true
+// })
 
-connection.connect((err) => {
-    if (err) {
-        throw err
-    } else {
-        console.log('connected to db');
-    }
-});
+// connection.connect((err) => {
+//     if (err) {
+//         throw err
+//     } else {
+//         console.log('connected to db');
+//     }
+// });
 
 
 
@@ -463,7 +463,7 @@ app.post('/api/stats1', (req, res) => {
 
 
 
-const port = process.env.PORT || $PORT;
+const port = process.env.PORT || 8080;
 console.log(port);
 app.listen(port, () => {
     console.log(`running on port ${port}`);

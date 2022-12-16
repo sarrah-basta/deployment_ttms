@@ -13,7 +13,7 @@ export default function TimeTableSelect() {
         const getData = async () => {
             const query = "Select name from Department"
             return axios
-            .post(`http://0.0.0.0:$PORT/api/query`,query)
+            .post(`http://0.0.0.0:port/api/query`,query)
             .then((res) => {
               if (res.data.code === 200){
                 setDept (res.data.data);
@@ -31,7 +31,7 @@ export default function TimeTableSelect() {
         if (deptVal !== 'DEFAULT') {
             const Data = async () => {
                 await axios
-                .post(`http://0.0.0.0:$PORT/api/query/dept`,deptVal)
+                .post(`http://0.0.0.0:port/api/query/dept`,deptVal)
                 .then((res) => {
                   if (res.data.code === 200){
                     setCourse(res.data.data);
@@ -61,7 +61,7 @@ export default function TimeTableSelect() {
         }
         
         axios
-            .post(`http://0.0.0.0:$PORT/api/timetable`,data)
+            .post(`http://0.0.0.0:port/api/timetable`,data)
             .then((res) => {
               if (res.data.code === 200){
                   console.log('inserted into Time_table table');

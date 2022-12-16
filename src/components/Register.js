@@ -43,7 +43,7 @@ export default function Register() {
     }
 
     axios
-      .post('http://0.0.0.0:$PORT/register', values)
+      .post('http://0.0.0.0:port/register', values)
       .then((res) => {
         if (res.data.code === 200) {
           alert('Registered succesfully');

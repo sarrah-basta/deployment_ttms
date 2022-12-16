@@ -179,7 +179,7 @@
 
 1. Go to the server directory
 2. Run node server.js
-3. LOCALHOST server will be running on port $PORT
+3. LOCALHOST server will be running on port port
 
 ---
 

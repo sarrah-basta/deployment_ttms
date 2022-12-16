@@ -9,7 +9,7 @@ export default function Graph() {
     useEffect(() => {
         setFlag(0);
         axios
-        .post(`http://0.0.0.0:$PORT/api/stats`)
+        .post(`http://0.0.0.0:port/api/stats`)
         .then((res) => {
           if (res.data.code === 200){
               let record =[];
@@ -25,7 +25,7 @@ export default function Graph() {
           console.error(err);
         })
         axios
-        .post(`http://0.0.0.0:$PORT/api/stats1`)
+        .post(`http://0.0.0.0:port/api/stats1`)
         .then((res) => {
           if (res.data.code === 200){
               let record =[];

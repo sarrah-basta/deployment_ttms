@@ -41,7 +41,7 @@ export default function Login() {
     }
 
     axios
-      .post('http://0.0.0.0:$PORT/login', values)
+      .post('http://0.0.0.0:port/login', values)
       .then((res) => {
         if (res.data.code === 200) {
           alert('Logged in succesfully');
